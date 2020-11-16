@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>YouTube Rank Checker Result</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-auto m-auto">
+                <img class="youtube-logo py-5" src="./images/youtube_1280.png" alt="YouTube Logo">
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Keywords</th>
+                    <th scope="col">Ranking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(index in results) { %>
+                <tr>
+                    <th scope="row"><%= parseInt(index) + 1 %></th>
+                    <td><%= results[index].keyword %></td>
+                    <td><%= results[index].ranking %></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <div class="footer">
+            <p>&copy; Copyright 2020. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

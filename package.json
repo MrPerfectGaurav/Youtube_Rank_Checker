@@ -1,0 +1,22 @@
+{
+  "name": "youtube_rank_checker",
+  "version": "1.0.0",
+  "description": "Check YouTube Channel Rank",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gaurav Verma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "csvjson": "^5.1.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "jshint": "^2.12.0",
+    "jsonstream": "^1.0.3",
+    "puppeteer": "^5.4.1",
+    "puppeteer-autoscroll-down": "^0.1.6"
+  }
+}

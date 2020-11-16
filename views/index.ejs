@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>YouYube Rank Checker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-auto m-auto">
+                <img class="youtube-logo py-5" src="./images/youtube_1280.png" alt="YouTube Logo">
+            </div>
+        </div>
+        <form method="post" action="/">
+            <div class="form-row was-validated">
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer01">Channel URL</label>
+                    <input type="text" class="form-control is-invalid" id="url" name="url" required>
+                    <!-- <div class="valid-feedback">
+                        Looks good!
+                    </div> -->
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer02">Channel Name</label>
+                    <input type="text" class="form-control is-invalid" id="name" name="name" required>
+                    <!-- <div class="valid-feedback">
+                        Looks good!
+                    </div> -->
+                </div>
+            </div>
+            <div class="was-validated">
+                <div class="mb-3">
+                    <label for="validationTextarea">Textarea</label>
+                    <textarea class="form-control is-invalid" id="keywords" name="keywords"
+                        placeholder="Required example textarea" required></textarea>
+                    <!-- <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div> -->
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Check</button>
+        </form>
+
+        <div class="footer">
+            <p>&copy; Copyright 2020. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
